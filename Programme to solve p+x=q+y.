@@ -1,0 +1,12 @@
+kill(all)$
+eq:p+x=q+y;
+d:p+q*'diff(y,x)$
+r1:lhs(eq)=k$
+r2:rhs(eq)=k$
+h1:solve(r1,p)$
+h2:solve(r2,q)$
+b:subst(h1,d)$
+a:subst(h2,b)$
+ode2(a,y,x)$
+z:rhs(%) -lhs(%)$
+print("the required solution is ",z)$
