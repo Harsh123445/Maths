@@ -1,0 +1,14 @@
+kill(all)$
+P:x$
+Q:y$
+R:z$
+eq:P*p+Q*q=R;
+print("the A.E is ")$
+print(dx/P,"= ",dy/Q,"=",dz/R)$
+eq1:1/P=1/Q* 'diff(y,x)$
+eq2:1/P=1/R*'diff(z,x)$
+print("both together the required solution ")$
+ode2(eq1,y,x)$
+subst(%c=a,%);
+ode2(eq2,z,x)$
+subst(%c=b,%);
