@@ -1,0 +1,6 @@
+kill(all)$
+f(t):=sinh(t);
+L:laplace(f(t),t,s);
+LI:integrate(L,s,inf)$
+print("the integral of laplace transform of f(t) is",LI)$
+ratsimp(limit(LI,s,inf)-limit(LI,s,s));
