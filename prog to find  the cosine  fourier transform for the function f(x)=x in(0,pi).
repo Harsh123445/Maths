@@ -1,0 +1,7 @@
+kill(all)$
+load("fourie")$
+f(x):=x;
+foursimp(fourcos(f(x),x,%pi));
+print("cosine fourier transform")$
+f_c(0)=rhs(%t5)*(pi);
+f_c(n)=rhs(%t6)*(pi/2);
