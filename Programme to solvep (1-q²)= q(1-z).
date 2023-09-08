@@ -1,0 +1,8 @@
+kill (all)$
+eq:p*(1-q^2)=q*(1-z);
+eq1:subst([p='diff (z,u),q=a*'diff (z,u)],eq)$
+h1:solve (eq1,'diff (z,u))$
+ode2(h1[1],z,u)$
+h2:subst(u=x+a*y,%)$
+print("the required solution is ",h2)$
+;# Maths
