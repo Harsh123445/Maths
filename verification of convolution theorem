@@ -1,0 +1,14 @@
+kill(all)$
+f(t):=sin(t)$
+g(t):=cos(t)$
+assume(t>0)$
+conv(t):=integrate(f(u)*g(t-u),u,0,t)$
+print("convolution of f(t) and g(t) is", conv(t))$
+LHS:trigsimp(laplace(conv(t),t,s))$
+RHS:trigsimp(laplace(f(t),t,s)*laplace(g(t),t,s))$
+print("L(f(t)g(t))= ",LHS)$
+print("L(f(t)) L(g(t))= ",RHS)$
+if LHS=RHS then
+print("convolution theorem is verified")
+else
+print("convolution theorem is not verified")$
