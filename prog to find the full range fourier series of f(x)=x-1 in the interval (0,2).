@@ -1,0 +1,4 @@
+kill(all)$
+load("fourie")$
+f(x):=x-1;
+totalfourier(f(x),x,2);
