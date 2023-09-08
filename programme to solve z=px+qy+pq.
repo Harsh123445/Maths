@@ -1,0 +1,3 @@
+kill(all)$ eq:z=p*x+q*y+p*q; 
+sol:subst([p=a,q=b],%)$ 
+print("the required solution is ",sol)$
