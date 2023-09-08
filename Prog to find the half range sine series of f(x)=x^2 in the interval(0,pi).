@@ -1,0 +1,8 @@
+kill(all)$
+load("fourie")$
+f(x):=x^2;
+foursin(f(x),x,%pi);
+clist:foursimp(%);
+soln:fourexpand(clist,x,%pi,inf);
+soln2:fourexpand(clist,x,%pi,100)$
+wxplot2d([f(x),soln2],[x,-2*%pi,2*%pi])$
