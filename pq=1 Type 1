@@ -1,0 +1,7 @@
+kill(all)$
+eqn:p*q=1;
+z:a*x+b*y+c$
+h:subst([p=a,q=b],eqn)$
+solve(h,b);
+h1:subst(%,z)$
+print("the required solution= ",h1)$
