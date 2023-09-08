@@ -1,0 +1,4 @@
+kill(all)$
+f:a$
+L:laplace(f,t,s)$
+print("the laplace transform of",f," is",L)$
