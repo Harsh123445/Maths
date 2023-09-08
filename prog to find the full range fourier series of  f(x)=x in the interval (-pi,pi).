@@ -1,0 +1,5 @@
+kill(all)$
+load("fourie")$
+f(x):=x;
+FR:totalfourier(f(x),x,%pi);
+print("the full range of the fourier series is ")$
