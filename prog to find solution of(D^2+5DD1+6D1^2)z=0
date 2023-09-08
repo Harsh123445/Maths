@@ -1,0 +1,11 @@
+kill(all)$
+F(D,D1):=D^2+5*D*(D1)+6*(D1)^2;
+F(D,D1)*z=0;
+ae:F(m,1)=0;
+k:allroots(ae)$
+m1:rhs(k[1])$
+m2:rhs(k[2])$
+if m1#m2 then
+print("solution is ",z=f(y+m1*x)+g(y+m2*x))
+else
+print("solution is ",z=f(y+m1*x)+x*g(y+m2*x))$
