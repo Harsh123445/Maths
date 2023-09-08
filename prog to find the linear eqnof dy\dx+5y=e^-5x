@@ -1,0 +1,4 @@
+kill(all)$
+f:'diff(y(x),x)+5*y(x)-%e^(-5*x);
+atvalue(y(x),x=0,2);
+desolve(f,y(x));
