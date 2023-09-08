@@ -1,0 +1,6 @@
+kill(all)$
+load("fourie")$
+f(x):=x;
+foursimp(foursin(f(x),x,%pi));
+print("sine fourier transform")$
+f_s(n)=rhs(%t4)*(pi/2);
