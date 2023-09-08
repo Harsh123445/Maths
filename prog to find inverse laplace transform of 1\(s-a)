@@ -1,0 +1,4 @@
+kill(all)$
+f:1/(s-a);
+IL:ilt(f,s,t)$
+print("The inverse laplace transform of f(t) is",IL);
