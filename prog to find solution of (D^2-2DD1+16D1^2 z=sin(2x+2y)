@@ -1,0 +1,19 @@
+kill(all)$
+F(D,D1):= D^2-2* D* (D1)+(D1)^2;
+f(x,y):=sin(2*x+2*y);
+F(D,D1)*z=f(x,y);
+print("A.E> of p.d.e is ")$
+ae:F(m,1)=0;
+k:allroots(ae)$
+m1:rhs(k[1])$
+m2:rhs(k[2])$
+if m1#m2 then
+CF:g1(y+m1*x)+g2(y+m2*x)
+else
+CF:g1(y+m1*x)+x*g2(y+m2*x)$
+h1:integrate(f(x,c-m1*x),x)$
+f1(x,y):= ratsimp(subst([c=y+m1*x],h1))$
+h2:integrate(f1(x,c-m2*x),x)$
+Pl:ratsimp(subst([c=y+m2*x],h2))$
+print("solution is")$
+Z=CF+PI;
